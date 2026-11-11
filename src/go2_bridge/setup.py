@@ -14,6 +14,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
+    author='Matteo Finco and Niccolò Dalla Libera',
+    author_email='matfinco@gmail.com, dallaliberaniccolo@gmail.com',
     maintainer='Matteo Finco and Niccolò Dalla Libera',
     maintainer_email='matfinco@gmail.com, dallaliberaniccolo@gmail.com',
     description='ROS 2 WebRTC bridge for the Unitree Go2 Pro robot',

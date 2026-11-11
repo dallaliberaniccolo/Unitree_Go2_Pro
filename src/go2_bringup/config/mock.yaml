@@ -1,0 +1,6 @@
+/go2/go2_bridge:
+  ros__parameters:
+    backend: mock
+    motion_enabled: true
+    ready_modes: "2"
+    video_enabled: false

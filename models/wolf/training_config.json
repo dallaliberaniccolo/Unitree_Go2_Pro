@@ -1,0 +1,33 @@
+{
+  "models": [
+    "yolo26n.pt",
+    "yolo11n.pt"
+  ],
+  "stages": [
+    {
+      "imgsz": 320,
+      "epochs": 20,
+      "lr0": 0.001
+    },
+    {
+      "imgsz": 384,
+      "epochs": 30,
+      "lr0": 0.0005
+    },
+    {
+      "imgsz": 480,
+      "epochs": 50,
+      "lr0": 0.0002
+    }
+  ],
+  "batch": 16,
+  "seed": 42,
+  "zip_sha256": "67aa33e0dfdd97bd347e5c43c6ce85128b1f78f10e06f8d4fd406c4c2c77f5b7",
+  "names": {
+    "0": "wolf",
+    "1": "fox"
+  },
+  "wolf_id": 0,
+  "ultralytics": "8.4.174",
+  "recipe": "adamw_v1"
+}

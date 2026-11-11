@@ -1,0 +1,50 @@
+{
+  "kind": "horizontal_2d",
+  "offset_xy_ut": [
+    -10.939732531913922,
+    -0.6782402886943228
+  ],
+  "matrix_xy": [
+    [
+      1.006487978844946,
+      -0.02058578098693125
+    ],
+    [
+      -0.02058578098693125,
+      0.9939748863438356
+    ]
+  ],
+  "reference_horizontal_ut": 22.06517962684583,
+  "radial_p10_p90_percent": 28.280433274479535,
+  "true_north_correction_deg": -86.17099917534364,
+  "mag_axes": [
+    1,
+    -2,
+    -3
+  ],
+  "heading_reference": "geographic_north_iphone",
+  "limitations": [
+    "provisional",
+    "horizontal_only",
+    "z_not_calibrated",
+    "operator_reference",
+    "reverse_holdout_has_up_to_21deg_peak"
+  ],
+  "validation": {
+    "fit": "forward rotation only",
+    "north_reference_deg": 167.0,
+    "forward_vs_relative_imu": {
+      "rms_deg": 5.376972004334753,
+      "p90_abs_deg": 8.736554476387846,
+      "max_abs_deg": 15.575241217203711
+    },
+    "reverse_holdout_vs_relative_imu": {
+      "rms_deg": 7.49192436027774,
+      "p90_abs_deg": 12.250705980315697,
+      "max_abs_deg": 22.07913271593719
+    },
+    "radial_p10_p90_percent": 28.280433274479535,
+    "final_heading_deg": 167.0,
+    "final_reference_error_deg": 0.0
+  }
+}

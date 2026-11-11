@@ -1,0 +1,38 @@
+# ROS 2 / Colcon
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Ambienti virtuali
+.venv/
+venv/
+
+# Log
+*.log
+
+# File temporanei e sistema
+.DS_Store
+Thumbs.db
+*~
+
+# Credenziali e configurazioni locali
+.env
+.env.*
+!.env.example
+
+# Backup e aggiornamenti storici locali
+.yolo_updates/
+orientation_backup_*/
+orientation_update/
+*.backup*
+*.bak
+
+# Metadati generati dai pacchetti Python
+*.egg-info/

@@ -1,0 +1,4 @@
+float64 heading_true_deg
+---
+bool success
+string message

@@ -1,0 +1,40 @@
+{
+  "checkpoint_sha256": "d1911e0e634bbb5f5a7151c3f3025d67c372202776d5b69d24c49557a41532ca",
+  "imgsz": 448,
+  "conf": 0.2,
+  "nms_iou": 0.6,
+  "ultralytics": "8.4.174",
+  "wolf_id": 0,
+  "classes": {
+    "0": "wolf",
+    "1": "fox"
+  },
+  "rect": false,
+  "max_det": 300,
+  "model": "wolf_detector.pt",
+  "validation": {
+    "candidate": "yolo26n_s2_best",
+    "imgsz": 448,
+    "conf": 0.2,
+    "tp": 162,
+    "fp": 53,
+    "fn": 24,
+    "precision": 0.7534883720930232,
+    "recall": 0.8709677419354839,
+    "f2": 0.8446298227320125,
+    "tp_img": 146,
+    "fp_img": 15,
+    "fn_img": 9,
+    "tn_img": 151,
+    "precision_img": 0.906832298136646,
+    "tpr_img": 0.9419354838709676,
+    "fpr_img": 0.0903614457831325,
+    "negative_fpr": 0.0903614457831325,
+    "image_recall": 0.9419354838709676,
+    "positive_images": 155,
+    "negative_images": 166,
+    "false_alarm_images": 15,
+    "eligible": true
+  },
+  "warning": "Esportazione multipla programmata."
+}

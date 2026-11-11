@@ -1,0 +1,9 @@
+/go2/go2_bridge:
+  ros__parameters:
+    backend: webrtc
+    connection_method: LocalAP
+    robot_ip: ""
+    motion_enabled: false
+    ready_modes: ""
+    video_enabled: true
+    video_rate: 2.0

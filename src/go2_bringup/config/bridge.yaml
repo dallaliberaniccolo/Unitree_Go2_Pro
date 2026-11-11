@@ -1,0 +1,25 @@
+/go2/go2_bridge:
+  ros__parameters:
+    backend: webrtc
+    connection_method: LocalSTA
+    # Prefer UNITREE_ROBOT_IP environment variable; never guess the robot IP.
+    robot_ip: ""
+    motion_enabled: false
+    # Comma-separated integers, EMPTY until validated on your actual robot.
+    # Matching a mode is a preliminary gate, NOT a full firmware fault decoder.
+    ready_modes: ""
+    video_enabled: true
+    video_rate: 5.0
+    camera_frame: go2_camera_optical_frame
+    command_frame: base_link
+    command_rate: 20.0
+    permit_timeout: 0.6
+    command_timeout: 0.3
+    telemetry_timeout: 0.5
+    connect_timeout: 25.0
+    reconnect_delay: 3.0
+    max_buffered_bytes: 16384
+    max_vx: 0.15
+    max_vy: 0.10
+    max_wz: 0.30
+    max_clock_skew: 0.05

@@ -1,0 +1,122 @@
+/go2/go2_bridge:
+  ros__parameters:
+    backend: webrtc
+    command_rate: 20.0
+    command_timeout: 0.3
+    connection_method: LocalSTA
+    max_vx: 2.0
+    max_vy: 2.0
+    max_wz: 0.3
+    motion_enabled: false
+    motion_transport: sport
+    permit_timeout: 0.6
+    ready_modes: 0,1,2,3
+    robot_ip: 192.168.12.1
+    telemetry_timeout: 0.5
+    video_enabled: true
+    video_rate: 1.5
+/go2_gps_sensor:
+  ros__parameters:
+    baudrate: 9600
+    max_age_sec: 3.5
+    minimum_sigma_m: 3.0
+    serial_port: /dev/gps
+    uere_m: 3.0
+/go2_imu_mag_sensor:
+  ros__parameters:
+    accel_gyro_axes:
+    - 1
+    - 2
+    - 3
+    axes_verified: true
+    calibration_path: /ws/config/calibration/mag_calibrazione_2d_robot.json
+    declination_configured: true
+    declination_deg: 4.21
+    gyro_auto_calibrate: true
+    gyro_calib_max_acc_std_g: 0.08
+    gyro_calib_max_mean_dps: 10.0
+    gyro_calib_max_std_dps: 2.5
+    gyro_calib_seconds: 2.5
+    heading_accel_alpha: 0.2
+    heading_offset_deg: 0.0
+    mag_axes:
+    - 1
+    - -2
+    - -3
+    max_mag_deviation_fraction: 0.5
+    max_mag_variation_percent: 55.0
+    rate_hz: 20.0
+    spi_bus: 0
+    spi_device: 0
+    spi_speed_hz: 300000
+    use_2d_horizontal_compass: true
+    accel_dlpf_cfg: 6
+    gyro_dlpf_cfg: 6
+    gravity_tau_sec: 0.5
+    gravity_accel_smoothing_sec: 0.2
+    gravity_max_coast_sec: 2.0
+    max_mag_upper_deviation_fraction: 1.26
+/go2_mission_manager:
+  ros__parameters:
+    align_exit_deg: 8.0
+    arrival_radius_m: 3.5
+    arrival_samples: 2
+    auto_start_on_goal: true
+    enable_motion: false
+    kp_yaw: 0.65
+    lock_straight_line: false
+    max_vx: 2.0
+    max_wz: 0.25
+    max_wz_walking: 0.18
+    min_vx: 0.08
+    min_wz: 0.1
+    slow_down_radius_m: 15.0
+    approach_speed_mps: 0.5
+    turn_in_place_deg: 22.0
+    yaw_cmd_sign: 1.0
+    yaw_deadband_deg: 3.5
+    max_linear_accel_mps2: 0.3
+    max_linear_decel_mps2: 0.5
+    minimum_satellites: 7
+    # Go2 Pro WebRTC profile: raw sport codes are state/API information.
+    sport_state_code_is_fault: false
+    readiness_stable_sec: 1.5
+    recovery_retry_sec: 3.0
+    max_bridge_recovery_attempts: 3
+    identification_initial_radius_m: 50.0
+    identification_early_rate_m_per_min: 50.0
+    identification_late_rate_m_per_min: 40.0
+    identification_breakpoint_sec: 300.0
+    identification_result_max_age_sec: 2.0
+/go2_animal_detector:
+  ros__parameters:
+    model_path: /ws/models/wolf/wolf_detector.pt
+    image_topic: /go2/camera/image_raw
+    inference_rate_hz: 1.5
+    image_size: 448
+    inference_threads: 2
+    target_class_names: [wolf, lupo]
+    target_class_id: -1
+    confidence_threshold: 0.20
+    nms_iou: 0.6
+    max_detections: 300
+    confirmation_frames: 2
+    confirmation_window: 0  # no count cap; include all distinct frames in the time window
+    confirmation_max_age_sec: 3.0
+    record_directory: ''  # opt-in: each run creates its own evidence subdirectory
+    max_frame_age_sec: 2.0
+    control_timeout_sec: 1.5
+/go2_navigation:
+  ros__parameters:
+    arrival_radius_m: 3.5
+    gga_max_age_sec: 3.5
+    gps_max_age_sec: 3.5
+    imu_max_age_sec: 1.5
+    min_satellites: 7
+    telemetry_max_age_sec: 1.5
+    unitree_imu_max_age_sec: 0.5
+    magnetic_hold_max_sec: 10.0
+    magnetic_innovation_limit_deg: 12.0
+    magnetic_reacquire_sec: 1.0
+    magnetic_correction_rate_dps: 2.0
+    unitree_yaw_ccw_positive: true

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>go2_sensors</name><version>0.1.0</version>
+  <description>Experimental read-only GNSS and ICM-20948/Ak09916 adapters for ROS 2 Jazzy.</description>
+  <maintainer email="noreply@example.com">tesi</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend><exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend><exec_depend>launch_ros</exec_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

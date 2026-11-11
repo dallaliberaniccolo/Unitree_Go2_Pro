@@ -1,0 +1,28 @@
+/go2_gps_sensor:
+  ros__parameters:
+    serial_port: /dev/gps
+    baudrate: 9600
+    max_age_sec: 3.5
+
+/go2_imu_mag_sensor:
+  ros__parameters:
+    spi_bus: 0
+    spi_device: 0
+    spi_speed_hz: 100000
+    rate_hz: 10.0
+    heading_accel_alpha: 0.20
+    calibration_path: /ws/config/calibration/mag_calibrazione_2d_robot.json
+    use_2d_horizontal_compass: true
+    axes_verified: true
+    declination_configured: true
+    declination_deg: 4.21
+    heading_offset_deg: 0.0
+    accel_gyro_axes: [1, 2, 3]
+    mag_axes: [1, -2, -3]
+    max_mag_variation_percent: 55.0
+    max_mag_deviation_fraction: 0.45
+    gyro_auto_calibrate: true
+    gyro_calib_seconds: 2.5
+    gyro_calib_max_std_dps: 2.5
+    gyro_calib_max_acc_std_g: 0.08
+    gyro_calib_max_mean_dps: 10.0

@@ -1,0 +1,3 @@
+# Version recorded in the supplied wolf_detector.pt inference_config.json.
+# Do not install the CUDA/Colab environment.txt wholesale on Raspberry Pi.
+ultralytics==8.4.174
